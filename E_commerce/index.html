@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h2 class="logo">StyleMint</h2>
+  <nav class="nav">
+    <a href="Wishlist.html">Wishlist ❤️</a>
+    <a href="order.html">Orders 📦</a>
+    <a href="cart.html">Cart 🛒</a>
+  </nav>
+</header>
+
+<!-- FILTER + SEARCH BAR -->
+<div class="control-bar">
+  <input type="text" id="searchBar" placeholder="Search products...">
+
+  <select id="brandFilter">
+    <option value="all">All Brands</option>
+    <option value="Nike">Nike</option>
+    <option value="Adidas">Adidas</option>
+    <option value="Puma">Puma</option>
+  </select>
+
+  <select id="sortSelect">
+    <option value="popular">Popular</option>
+    <option value="lowToHigh">Price: Low → High</option>
+    <option value="highToLow">Price: High → Low</option>
+  </select>
+</div>
+
+<!-- PRODUCT LIST -->
+<div id="productList" class="product-container"></div>
+
+<script src="data.js"></script>
+<script src="App.js"></script>
+</body>
+</html>
