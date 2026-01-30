@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h2>Checkout</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart 🛒</a>
+  </nav>
+</header>
+
+<div class="checkout-container">
+
+  <!-- ADDRESS FORM -->
+  <div class="checkout-section">
+    <h3>Shipping Address</h3>
+    <input class="input full" id="name" placeholder="Full Name">
+    <input class="input full" id="phone" placeholder="Phone Number">
+    <input class="input full" id="address" placeholder="House No, Street">
+    <input class="input full" id="city" placeholder="City">
+    <input class="input full" id="pincode" placeholder="Pincode">
+  </div>
+
+  <!-- PAYMENT METHOD -->
+  <div class="checkout-section">
+    <h3>Payment</h3>
+    <label><input type="radio" name="pay" value="COD" checked> Cash on Delivery</label><br>
+    <label><input type="radio" name="pay" value="UPI"> UPI</label><br>
+    <label><input type="radio" name="pay" value="Card"> Card Payment</label>
+  </div>
+
+  <!-- ORDER SUMMARY -->
+  <div class="checkout-section">
+    <h3>Order Summary</h3>
+    <p id="summary"></p>
+    <button id="placeOrderBtn" class="btn cart-btn big">Place Order</button>
+
+  </div>
+
+</div>
+
+<script src="checkout.js"></script>
+</body>
+</html>
